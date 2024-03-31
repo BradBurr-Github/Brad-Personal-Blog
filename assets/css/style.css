@@ -6,16 +6,63 @@ html {
   margin: 0;
   padding: 0;
   height: 100%;
+  background-color: rgb(228, 228, 235);
   font-family: Arial, sans-serif;
+}
+
+img {
+  width: 30px;
+  height: 30px;
+  margin-top: 7px;
+  margin-right: 5px;
+  float: right;
 }
 
 nav {
   height: 50px;
-  background-color: #333;
-  border-bottom: 4px double #000;
+  border-bottom: 12px double black;
 }
 
-body {
+.container {
+  display: flex;
+  height: 100%;
+}
+
+.left-section, .right-section {
+  flex: 1;
+  padding: 20px;
+}
+
+.sphere {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px; /* Adjust size as needed */
+  height: 200px; /* Adjust size as needed */
+  background-color: #3498db; /* Adjust color as needed */
+  border-radius: 50%; /* This creates the spherical shape */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white; /* Adjust text color as needed */
+  font-size: 20px; /* Adjust font size as needed */
+  font-weight: bold; /* Adjust font weight as needed */
+}
+
+
+.left-section {
+  /* background-color: #f0f0f0; */
+  border-right: 12px double black;
+}
+
+.right-section {
+  /* background-color: #e0e0e0; */
+}
+
+
+
+/* body {
   font-family: sans-serif;
   background-color: #f7f3f3;
   text-align: center;
@@ -82,4 +129,4 @@ button {
 #control-panel input[type="text"] {
   background-color: #f0f0f0;
   color: black;
-}
+} */
