@@ -1,42 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Personal Blog</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
-  <body>
-    <nav>
-      <img src="./assets/images/lightTheme.png" alt="Toggle Light or Dark Theme image">
-    </nav>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Navbar Example</title>
+<style>
+  /* Basic CSS for the navbar */
+  .navbar {
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
 
-    <!-- <h1>My Personal Blog</h1> -->
-    <main>
-      <div class="container">
-        <div class="left-section">
-            <!-- Content for left section -->
-            <div class="sphere"><span>Brad's Blog</span></div>         
-        </div>
-        <div class="right-section">
-            <!-- Content for right section -->
-            <h2>Right Section</h2>
-            <p>This is the content of the right section.</p>
-        </div>
+  .navbar-title {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    flex-grow: 1;
+  }
 
-      <!-- <div id="control-panel-wrapper">
-        <div id="control-panel">
-          <input type="text" id="text-username" placeholder="Username" />
-          <input type="text" id="text-title" placeholder="Title" />
-          <input type="text" id="text-content" placeholder="Content" />
-        </div>
-        <button id="submit">Submit</button>
-      </div> -->
-      
+  .navbar button {
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
 
-      <!-- <div id="mood-board"></div> -->
+  .navbar button:hover {
+    background-color: #45a049;
+  }
 
-      <script src="assets/js/script.js"></script>
-    </main>
-  </body>
+  .navbar img {
+    display: block;
+    padding: 5px;
+    height: 40px;
+    width: auto;
+  }
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <span class="navbar-title">My Website</span>
+  <button>Sign Up</button>
+  <img src="logo.png" alt="Logo">
+</div>
+
+<!-- Add your content here -->
+
+</body>
 </html>

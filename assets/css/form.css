@@ -1,3 +1,79 @@
-:root {
-  --content-height: 500px;
+.container {
+  display: flex;
+  height: 100%;
+}
+
+.left-section, .right-section {
+  flex: 1;
+  padding: 20px;
+}
+
+.left-section {
+  border-right: 12px double black;
+}
+
+.sphere {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  background-color: #3498db;
+  border-radius: 50%; /* spherical shape */
+  display: flex;
+  margin-top: 15px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.right-section {
+  height: 100%;
+}
+
+label {
+  font-weight: bold;
+}
+
+input, textarea {
+  background-color: #f1f3f4;
+  border-radius: 2px;
+  border-width: 0;
+  font-size: 1em;
+  height: 15px;
+  margin-top: 5px;
+  max-width: 100%;
+  padding: 7px;
+  display: flex;
+  vertical-align: middle;
+  width: 97%;
+  margin-bottom: 25px;
+}
+
+textarea {
+  height: 60px;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+#submit-btn {
+  height: 35px;
+  width: 100%;
+  font-size: 20px;
+  margin-top: 25px;
+  background-color: black;
+  color: white;
+}
+
+#submit-btn:hover {
+  background-color: green;
 }
