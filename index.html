@@ -1,59 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Navbar Example</title>
-<style>
-  /* Basic CSS for the navbar */
-  .navbar {
-    background-color: #333;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-  }
-
-  .navbar-title {
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    flex-grow: 1;
-  }
-
-  .navbar button {
-    color: white;
-    background-color: #4CAF50;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    cursor: pointer;
-  }
-
-  .navbar button:hover {
-    background-color: #45a049;
-  }
-
-  .navbar img {
-    display: block;
-    padding: 5px;
-    height: 40px;
-    width: auto;
-  }
-</style>
-</head>
-<body>
-
-<div class="navbar">
-  <span class="navbar-title">My Website</span>
-  <button>Sign Up</button>
-  <img src="logo.png" alt="Logo">
-</div>
-
-<!-- Add your content here -->
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brad's Blog</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/form.css" />
+  </head>
+  <body>
+    <nav>
+      <img id="toggle-btn" src="./assets/images/lightTheme.png" alt="Toggle Light or Dark Theme image">
+    </nav>
+    <main>
+      <div class="container">
+        <!-- Content for left section -->
+        <div class="left-section">
+            <div class="sphere"><span>Brad's Blog</span></div>
+        </div>
+        <!-- Content for right section -->
+        <form class="right-section">
+          <h2>What's on your mind?</h2>
+          <div>
+            <label for="user">Username:</label>
+            <input type="text" name="user" id="user" placeholder="johnsmith" />
+          </div>
+          <div>
+            <label for="title">Title:</label>
+            <input type="text" name="title" id="title" placeholder="My Entry Title" />
+          </div>
+          <div>
+            <label for="content">Content:</label>
+            <textarea id="content" name="content" placeholder="Today was so cool.."></textarea>
+          </div>
+          <button id="submit-btn">Submit</button>
+        </form>
+      </div>
+      <script src="assets/js/script.js"></script>
+    </main>
+  </body>
 </html>
