@@ -1,29 +1,26 @@
-
-h2 {
-  color: blue;
-  line-height: 3px;
+.navbar {
+  display: flex;
+  align-items: center;
 }
 
-.navbar button {
-  color: white;
-  background-color: #4CAF50;
-  border: none;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  cursor: pointer;
+.navbar-title {
+  color: blue;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: left;
+  flex-grow: 1;
 }
 
 #back-btn {
-  height: 25px;
-  width: 60px;
+  height: 30px;
+  width: 90px;
   text-align: center;
   font-size: 15px;
   background-color: black;
   color: white;
   cursor: pointer;
-  margin: 10px 10px;
+  margin-top: -5px;
+  margin-right: 5px;
 }
 
 #back-btn:hover {
@@ -31,14 +28,15 @@ h2 {
 }
 
 container {
-  width: 100%;
   border: 1px solid black;
   padding: 50px;
   margin: 20px;
-  position: relative;
+  display: block;
 }
 
-
+.blog-entry {
+  font-size: 20px;
+}
 
 footer {
   border-top: 12px double black;

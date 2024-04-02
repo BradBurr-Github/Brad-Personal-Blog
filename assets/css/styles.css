@@ -6,17 +6,15 @@ html {
   font-family: Arial, sans-serif;
 }
 
-nav {
+.navbar {
   height: 50px;
-  display: flex;
   border-bottom: 12px double black;
 }
 
 #toggle-btn {
-  width: 30px;
-  height: 30px;
-  margin-top: 7px;
-  margin-right: 5px;
-  align-items: end;
+  display: block;
+  padding: 5px;
+  height: 35px;
+  margin-top: -5px;
+  float: right;
 }
-
