@@ -1,18 +1,31 @@
 // Logic Code for the Blog App
-const blogLandingPage = "index.html";
-const blogDetailsPage = "blog.html";
+const toggleButton = document.querySelector('#toggle-btn');
 
+// Redirect to landing page
 function showBlogLandingPage() {
-  location.href = blogLandingPage;
+  window.location.href = "../../index.html";
 }
 
+// Redirect to Blog Details page
 function showBlogDetailsPage() {
-  location.href = blogDetailsPage;
+  window.location.href = "../../blog.html";
 }
 
 // Funtion to read blogObject from localStorage
 function readFromLocalStorage(blogEntryArray) {
-  debugger;
+
   console.log(blogEntryArray);
   blogEntryArray = JSON.parse(localStorage.getItem('blogEntry'));
 }
+
+// Toggle dark mode
+function toggleDarkMode() {
+  let bodyEl = document.body;
+  bodyEl.classList.toggle("dark-mode");
+  toggleButton.setAttribute("src","../../assets/images/darkTheme.jpg")
+}
+
+toggleButton.addEventListener('click', function (event) {
+  event.preventDefault;
+  toggleDarkMode();
+});

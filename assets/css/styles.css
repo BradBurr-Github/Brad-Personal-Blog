@@ -17,5 +17,11 @@ html {
   padding: 5px;
   height: 35px;
   margin-top: -3px;
+  cursor: pointer;
   float: right;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
 }

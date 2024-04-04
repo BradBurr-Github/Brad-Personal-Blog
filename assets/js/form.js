@@ -5,23 +5,25 @@ const contentInput = document.querySelector('#content');
 const submitBtn = document.querySelector('#submit-btn');
 
 // Track the information entered in the form
-const blogObject = [];
+let blogObject = [];
 
 // Funtion to save blogObject into localStorage
 function saveToLocalStorage() {
     localStorage.setItem('blogEntry', JSON.stringify(blogObject));
  }
 
- submitBtn.addEventListener('click', function () {
-    // location.href = "blog.html";
-    // showBlogDetailsPage();
-    debugger;
-    // Read in all entries in the localstorage
-    //blogObject = JSON.parse(localStorage.getItem('blogEntry'));
+ submitBtn.addEventListener('click', function (event) {
+    event.preventDefault();
 
-    userInput.value = "Trent";
-    titleInput.value = "My FIRST Blog";
-    contentInput.value = "This is MY CONTENT";
+    localStorage.clear();
+    // Read in all entries in the localstorage
+    const storedData = JSON.parse(localStorage.getItem('blogEntry'));
+    if (storedData) {
+        blogObject = storedData;
+    }
+    // userInput.value = "Trent";
+    // titleInput.value = "My FIRST Blog";
+    // contentInput.value = "This is MY CONTENT";
 
     let user = userInput.value;
     let title = titleInput.value;
@@ -42,7 +44,20 @@ function saveToLocalStorage() {
     }
     
     blogObject.push({user: user, title: title, content: content});
-    //console.log(blogObject);
+
+
+    //  userInput.value = "JEN";
+    // titleInput.value = "My 2nd Blog";
+    // contentInput.value = "This is MY CONTENT again...";
+
+    // user = userInput.value;
+    // title = titleInput.value;
+    // content = contentInput.value;
+
+    // blogObject.push({user: user, title: title, content: content});
+
     
     saveToLocalStorage();
+
+    //showBlogDetailsPage();
   });
