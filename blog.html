@@ -14,10 +14,7 @@
       <img id="toggle-btn" src="./assets/images/lightTheme.png" alt="Toggle Light or Dark Theme image">
     </nav>
     <main>
-      <container class="blog-entry">
-        <h3>Blog Title</h3>
-        <h6>Posted by: </h6>
-      </container>
+      <ul id="blog-list"></ul>      
       <script src="assets/js/logic.js"></script>
       <script src="assets/js/blog.js"></script>
     </main>
@@ -25,9 +22,12 @@
   <footer>
     <div>
       <p>
-        <a href="https://bradburr-github.github.io/BradBurr-Profile/" target="_blank">My Portfolio</a>
+        <a href="https://bradburr-github.github.io/BradBurr-Profile/" alt="Link to my Portfolio Webpage" target="_blank">My Portfolio</a>
       </p>
-      <a href="mailto:example@example.com">Email Me</a>
+      <a href="mailto:example@example.com" alt="Link to my Email address">Email Me</a>
+      <p>
+        <a href="javascript:clearAllEntries()" alt="Link to clear all entries.">Clear All Entries</a>
+      </p>
     </div>
   </footer>
 </html>

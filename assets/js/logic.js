@@ -1,5 +1,8 @@
-// Logic Code for the Blog App
+// Grab all the references to the DOM elements
 const toggleButton = document.querySelector('#toggle-btn');
+const darkThemeImage = "../../assets/images/darkTheme.jpg"
+const lightThemeImage = "../../assets/images/lightTheme.png"
+let isDarkMode = false;
 
 // Redirect to landing page
 function showBlogLandingPage() {
@@ -13,19 +16,23 @@ function showBlogDetailsPage() {
 
 // Funtion to read blogObject from localStorage
 function readFromLocalStorage(blogEntryArray) {
-
-  console.log(blogEntryArray);
   blogEntryArray = JSON.parse(localStorage.getItem('blogEntry'));
 }
 
 // Toggle dark mode
 function toggleDarkMode() {
   let bodyEl = document.body;
+  isDarkMode = !isDarkMode;
   bodyEl.classList.toggle("dark-mode");
-  toggleButton.setAttribute("src","../../assets/images/darkTheme.jpg")
+  toggleButton.setAttribute("src", isDarkMode ? darkThemeImage : lightThemeImage)
 }
 
+// Click event for Toggle button
 toggleButton.addEventListener('click', function (event) {
   event.preventDefault;
   toggleDarkMode();
 });
+
+function clearAllEntries(blogEntryArray) {
+  localStorage.clear();
+}

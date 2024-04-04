@@ -9,6 +9,7 @@ html {
 .navbar {
   display: flex;
   height: 50px;
+  display: block;
   border-bottom: 12px double black;
 }
 
@@ -19,6 +20,23 @@ html {
   margin-top: -3px;
   cursor: pointer;
   float: right;
+}
+
+#back-btn {
+  height: 30px;
+  width: 90px;
+  text-align: center;
+  font-size: 15px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-right: 5px;
+  float: right;
+}
+
+#back-btn:hover {
+  background-color: #45a049;
 }
 
 .dark-mode {
