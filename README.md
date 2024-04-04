@@ -8,7 +8,7 @@ Brad's Personal Blog
  
 ## Visit My Website
  
-[My Website](https://bradburr-github.github.io/Brad-Personal-Blog.html)
+[My Website](https://bradburr-github.github.io/Brad-Personal-Blog/)
  
  ## License
 
