@@ -1,17 +1,19 @@
 // Grab all the references to the DOM elements
 const toggleButton = document.querySelector('#toggle-btn');
+const landingPage = "../../index.html"
+const blogDetailsPage = "../../blog.html"
 const darkThemeImage = "../../assets/images/darkTheme.jpg"
 const lightThemeImage = "../../assets/images/lightTheme.png"
 let isDarkMode = false;
 
 // Redirect to landing page
 function showBlogLandingPage() {
-  window.location.href = "../../index.html";
+  window.location.href = landingPage;
 }
 
 // Redirect to Blog Details page
 function showBlogDetailsPage() {
-  window.location.href = "../../blog.html";
+  window.location.href = blogDetailsPage;
 }
 
 // Funtion to read blogObject from localStorage

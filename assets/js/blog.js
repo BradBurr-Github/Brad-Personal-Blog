@@ -19,23 +19,18 @@ function showBlogDetailsPage() {
         const li = document.createElement('li');
         li.textContent = blog.title;
 
+        // Create h5 element for the Content
         const contentText = document.createElement('h5');
         contentText.textContent = blog.content;
         contentText.style.fontStyle = "italic";
         li.appendChild(contentText);
 
-        // Append a 'Posted By' user at the bottom
+        // Create h6 element for username
         const userPost = document.createElement('h6');
         userPost.textContent = (`Posted by:  ${blog.user}`);
-        //const hrLine = document.createElement('hr');
-        //const contentText = document.createElement('button');
-        //hrLine.setAttribute("margin-top","-11px")
         li.appendChild(userPost);
-        //li.appendChild(hrLine);
-        
-        
-        //li.appendChild(contentText);
 
+        // Append to the #blog-list
         blogList.appendChild(li);
     }
   }
