@@ -2,8 +2,8 @@
 const toggleButton = document.querySelector('#toggle-btn');
 const landingPage = "index.html"
 const blogDetailsPage = "blog.html"
-const darkThemeImage = "darkTheme.jpg"
-const lightThemeImage = "lightTheme.png"
+const darkThemeImage = "../../assets/images/darkTheme.jpg"
+const lightThemeImage = "../../assets/images/lightTheme.png"
 let isDarkMode = false;
 
 // Redirect to landing page
