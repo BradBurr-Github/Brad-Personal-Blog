@@ -5,11 +5,7 @@ const contentInput = document.querySelector('#content');
 const submitBtn = document.querySelector('#submit-btn');
 
 // Track the information entered in the form
-let blogObject = {
-    user: [],
-    title: [],
-    content: [],
-  };
+const blogObject = [];
 
 // Funtion to save blogObject into localStorage
 function saveToLocalStorage() {
@@ -17,22 +13,36 @@ function saveToLocalStorage() {
  }
 
  submitBtn.addEventListener('click', function () {
+    // location.href = "blog.html";
+    // showBlogDetailsPage();
     debugger;
+    // Read in all entries in the localstorage
+    //blogObject = JSON.parse(localStorage.getItem('blogEntry'));
 
-    //location.href = "https://www.google.com";
+    userInput.value = "Trent";
+    titleInput.value = "My FIRST Blog";
+    contentInput.value = "This is MY CONTENT";
 
-    showBlogDetailsPage();
-    // const imageUrl = imageUrlInput.value;
-    // if (imageUrl) {
-    //   const img = document.createElement('img');
-    //   img.src = imageUrl;
-    //   img.classList.add('draggable');
-    //   document.body.appendChild(img);
-    //   // TODO: Create an image element, add a class of draggable, set the src attribute to the image URL provided by the user, and append it to the body element
-  
-    //   // TODO: Set the `currentElement` to the image element you create.
-    //   currentElement = img;
-    //   // ? We attach the mouse move event listener to the document and the mood board div so that the element can be dragged anywhere on the screen and dropped only on the mood board div.
-    //   attachMouseListeners();
-    // }
+    let user = userInput.value;
+    let title = titleInput.value;
+    let content = contentInput.value;
+
+    // Make sure all 3 text boxes have values in them
+    if(!user) {
+        window.alert("Please enter a valid Username and then click the 'Submit' button again.");
+        return;
+    }
+    if(!title) {
+        window.alert("Please enter a valid Title and then click the 'Submit' button again.");
+        return;
+    }
+    if(!content) {
+        window.alert("Please enter valid Content and then click the 'Submit' button again.");
+        return;
+    }
+    
+    blogObject.push({user: user, title: title, content: content});
+    //console.log(blogObject);
+    
+    saveToLocalStorage();
   });
