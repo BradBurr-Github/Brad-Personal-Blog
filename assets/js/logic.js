@@ -2,8 +2,8 @@
 const toggleButton = document.querySelector('#toggle-btn');
 const landingPage = "index.html"
 const blogDetailsPage = "blog.html"
-const darkThemeImage = "../../assets/images/darkTheme.jpg"
-const lightThemeImage = "../../assets/images/lightTheme.png"
+const darkThemeImage = "darkTheme.jpg"
+const lightThemeImage = "lightTheme.png"
 let isDarkMode = false;
 
 // Redirect to landing page
@@ -34,7 +34,3 @@ toggleButton.addEventListener('click', function (event) {
   event.preventDefault;
   toggleDarkMode();
 });
-
-function clearAllEntries(blogEntryArray) {
-  localStorage.clear();
-}

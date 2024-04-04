@@ -20,27 +20,6 @@ function saveToLocalStorage() {
     if (storedData) {
         blogObject = storedData;
     }
-    
-
-    //TEMP CODE - REMOVE!
-    const short = "This is MY CONTENT and it is not very long.  This is MY CONTENT and it is not very long."
-    const medium = "This is MY CONTENT and it is getting longer.  This is MY CONTENT and it is getting longer. This is MY CONTENT and it is getting longer.  This is MY CONTENT and it is getting longer.  This is MY CONTENT and it is getting longer.  This is MY CONTENT and it is getting longer.  This is MY CONTENT and it is getting longer.  This is MY CONTENT and it is getting longer."
-    const long = "This is MY CONTENT and it is very long.  This is MY CONTENT and it is very long.  This is MY CONTENT and it is very long.  This is MY CONTENT and it is very long.  This is MY CONTENT and it is very long.  This is MY CONTENT and it is very long.  This is MY CONTENT and it is very long.  This is MY CONTENT and it is very long.  This is MY CONTENT and it is very long.  This is MY CONTENT and it is very long  This is MY CONTENT and it is very long  This is MY CONTENT and it is very long  This is MY CONTENT and it is very long  This is MY CONTENT and it is very long";
-
-    let randomString = Math.floor(Math.random()*3);
-
-    userInput.value = "Trent";
-    titleInput.value = "My FIRST Blog";
-    if(randomString == 2) {
-        contentInput.value = long;
-    }
-    else if (randomString == 1) {
-        contentInput.value = medium;
-    }
-    else {
-        contentInput.value = short;
-    }
-
 
     let user = userInput.value;
     let title = titleInput.value;
