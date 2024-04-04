@@ -1,7 +1,7 @@
 // Grab all the references to the DOM elements
 const toggleButton = document.querySelector('#toggle-btn');
-const landingPage = "../../index.html"
-const blogDetailsPage = "../../blog.html"
+const landingPage = "index.html"
+const blogDetailsPage = "blog.html"
 const darkThemeImage = "../../assets/images/darkTheme.jpg"
 const lightThemeImage = "../../assets/images/lightTheme.png"
 let isDarkMode = false;
