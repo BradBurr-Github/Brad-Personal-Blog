@@ -1,13 +1,9 @@
-.navbar {
-  display: flex;
-  align-items: center;
-}
-
 .navbar-title {
   color: blue;
   font-size: 30px;
   font-weight: bold;
   text-align: left;
+  margin-top: 6px;
   flex-grow: 1;
 }
 
@@ -19,7 +15,7 @@
   background-color: black;
   color: white;
   cursor: pointer;
-  margin-top: -5px;
+  margin-top: 5px;
   margin-right: 5px;
 }
 
